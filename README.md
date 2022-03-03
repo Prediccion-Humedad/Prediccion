@@ -1,11 +1,12 @@
-# Team Data Science Project Template
+# Plantilla de Proyecto de Ciencia de Datos en Equipo
 
-This template is an implementation of the Microsoft's Team Data Science Project Template that is currently used at the "Programa de Formación en Machine Learning and Data Science" at Universidad Nacional de Colombia.
+Esta plantilla es una implementación de la Plantilla de Proyecto de Ciencia de Datos en Equipo de Microsoft que se utiliza actualmente en el "Programa de Formación en Aprendizaje Automático y Ciencia de Datos" de la Universidad Nacional de Colombia.
 
-You'll need tools like `poetry` (default), `venv`, `pyenv` (default), `renv`, `conda`, among others for dependency management and resolution.
+Necesitarás herramientas como `poetry` (por defecto), `venv`, `pyenv` (por defecto), `renv`, `conda`, entre otras para la gestión y resolución de dependencias.
 
-This template provides the following folders:
+Esta plantilla proporciona las siguientes carpetas:
 
-* `packagename`: put the source code (classes and functions) in this folder.
-* `docs`: put the documentation in this folder.
-* `scripts`: this folder must contain the scripts/notebooks that will be executed.
+* `packagename`: poner el código fuente (clases y funciones) en esta carpeta.
+* `docs`: pon la documentación en esta carpeta.
+* `scripts`: esta carpeta debe contener los scripts/notas que se ejecutarán.
+
