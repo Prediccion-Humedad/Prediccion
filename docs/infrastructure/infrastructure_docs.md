@@ -1,8 +1,10 @@
-# Infrastructure
+# Infraestructura
 
-In this folder you can add infrastructure documents/guides including:
+En esta carpeta puedes añadir documentos/guías de infraestructura que incluyen:
 
-* Docker/kubernetes setup and management.
-* Server-based configuration (minimal system resources, VMs setup, webserver setup, among others).
-* Environment configuration (pyenv, poetry, jupyter, rstudio).
-* Execution pipelines (airflow, mlflow).
+* Configuración y gestión de Docker/kubernetes.
+* Configuración basada en el servidor (recursos mínimos del sistema, configuración de VMs, configuración del servidor web, entre otros).
+* Configuración del entorno (pyenv, poetry, jupyter, rstudio).
+* Pipelines de ejecución (airflow, mlflow).
+
+

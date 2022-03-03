@@ -1,42 +1,42 @@
-# Baseline Model Report
+# Informe del modelo de referencia
 
-_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task._
-
-> If using the Automated Modeling and Reporting tool, most of the sections below will be generated automatically from this tool. 
-
-## Analytic Approach
-* What is target definition
-* What are inputs (description)
-* What kind of model was built?
-
-## Model Description
-
-* Models and Parameters
-
-	* Description or images of data flow graph
-  		* if AzureML, link to:
-    		* Training experiment
-    		* Scoring workflow
-	* What learner(s) were used?
-	* Learner hyper-parameters
+El modelo base es el modelo que un científico de datos entrenaría y evaluaría rápidamente después de tener el primer conjunto de características (preliminares) listo para el modelado de aprendizaje automático. A través de la construcción del modelo de referencia, el científico de datos puede tener una evaluación rápida de la viabilidad de la tarea de aprendizaje automático.
 
 
-## Results (Model Performance)
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
+## Enfoque analítico
+* Cuál es la definición del objetivo
+* Cuáles son las entradas (descripción)
+* ¿Qué tipo de modelo se ha construido?
 
-## Model Understanding
+## Descripción del modelo
 
-* Variable Importance (significance)
+* Modelos y parámetros
 
-* Insight Derived from the Model
+	* Descripción o imágenes del gráfico de flujo de datos
+  		* Si es AzureML, enlace a:
+    		* Experimento de entrenamiento
+    		* Flujo de trabajo de puntuación
+	* ¿Qué aprendiz(es) se utilizó(n)?
+	* Hiperparámetros del aprendizaje
 
-## Conclusion and Discussions for Next Steps
 
-* Conclusion on Feasibility Assessment of the Machine Learning Task
+## Resultados (Rendimiento del modelo)
+* Gráficos ROC/Lift, AUC, R^2, MAPE, según proceda
+* Gráficos de rendimiento para los barridos de parámetros, si procede
 
-* Discussion on Overfitting (If Applicable)
+## Comprensión del modelo
 
-* What other Features Can Be Generated from the Current Data
+* Importancia de las variables (importancia)
 
-* What other Relevant Data Sources Are Available to Help the Modeling
+## Comprensión del modelo
+
+## Conclusión y debates para los próximos pasos
+
+* Conclusión sobre la evaluación de la viabilidad de la tarea de aprendizaje automático
+
+* Debate sobre el sobreajuste (si procede)
+
+* ¿Qué otras características pueden generarse a partir de los datos actuales?
+
+* Qué otras fuentes de datos relevantes están disponibles para ayudar al modelado
+

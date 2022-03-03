@@ -1,34 +1,34 @@
-# Final Model Report
-_Report describing the final model to be delivered - typically comprised of one or more of the models built during the life of the project_
+#Informe del modelo final
+Informe que describe el modelo final que se entregará - normalmente compuesto por uno o más de los modelos construidos durante la vida del proyecto_.
 
-## Analytic Approach
-* What is target definition
-* What are inputs (description)
-* What kind of model was built?
+## Enfoque analítico
+* ¿Cuál es la definición del objetivo?
+* ¿Cuáles son las entradas (descripción)?
+* ¿Qué tipo de modelo se ha construido?
 
-## Solution Description
-* Simple solution architecture (Data sources, solution components, data flow)
-* What is output?
+## Descripción de la solución
+* Arquitectura simple de la solución (fuentes de datos, componentes de la solución, flujo de datos)
+* ¿Cuál es la salida?
 
-## Data
-* Source
-* Data Schema
-* Sampling
-* Selection (dates, segments)
-* Stats (counts)
+## Datos
+* Fuente
+* Esquema de datos
+* Muestreo
+* Selección (fechas, segmentos)
+* Estadísticas (recuentos)
 
-## Features
-* List of raw and derived features 
-* Importance ranking.
+## Características
+* Lista de características brutas y derivadas 
+* Clasificación de la importancia.
 
-## Algorithm
-* Description or images of data flow graph
-  * if AzureML, link to:
-    * Training experiment
-    * Scoring workflow
-* What learner(s) were used?
-* Learner hyper-parameters
+## Algoritmo
+* Descripción o imágenes del gráfico de flujo de datos
+  ## Si es AzureML, enlace a:
+    * Experimento de entrenamiento
+    * Flujo de trabajo de puntuación
+* ¿Qué aprendiz(es) se utilizó(n)?
+* Hiperparámetros del aprendiz
 
-## Results
-* ROC/Lift charts, AUC, R^2, MAPE as appropriate
-* Performance graphs for parameters sweeps if applicable
+## Resultados
+* Gráficos ROC/Lift, AUC, R^2, MAPE, según proceda
+* Gráficos de rendimiento para los barridos de parámetros, si procede

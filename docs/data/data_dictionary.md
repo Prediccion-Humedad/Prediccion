@@ -1,31 +1,32 @@
-# Data Dictionary
+# Diccionario de datos
 
-In this document you must describe the tables, collections or files that you are using in the project. You can describe each database and provide UML diagrams for a better design description.
+En este documento debes describir las tablas, colecciones o archivos que estás utilizando en el proyecto. Puedes describir cada base de datos y proporcionar diagramas UML para una mejor descripción del diseño.
 
-# Database Name 1
+# Nombre de la base de datos 1
 
-Description of the database.
+Descripción de la base de datos.
 
-![UML Diagram](/file/uml/database1)
+#[Diagrama UML](/archivo/uml/base de datos1)
 
-## Table 1
+## Tabla 1
 
-Here you must describe the table
+Aquí debe describir la tabla
 
-| column | type | description |
-| --- | --- | --- |
-| col1 | INT | Example column |
+| columna | tipo | descripción |
 
-# Database Name 2
+| col1 | INT | Ejemplo de columna
 
-Description of the database.
+# Nombre de la base de datos 2
 
-![UML Diagram](/file/uml/database1)
+Descripción de la base de datos.
 
-## Table 2
+#[Diagrama UML](/file/uml/database1)
 
-Here you must describe the table
+## Tabla 2
 
-| column | type | description |
-| --- | --- | --- |
-| col1 | INT | Example column |
+Aquí debe describir la tabla
+
+| columna | tipo | descripción |
+
+| col1 | INT | Columna de ejemplo |
+

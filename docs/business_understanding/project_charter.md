@@ -1,54 +1,55 @@
-# Project Charter
+# Carta del proyecto
 
-## Business background
+## Antecedentes empresariales
 
-* Who is the client, what business domain the client is in.
-* What business problems are we trying to address?
+# Quién es el cliente, en qué ámbito empresarial se encuentra el cliente.
+## ¿Qué problemas empresariales se pretenden resolver?
 
-## Scope
-* What data science solutions are we trying to build?
-* What will we do?
-* How is it going to be consumed by the customer?
+## Alcance
+* ¿Qué soluciones de ciencia de datos estamos tratando de construir?
+* ¿Qué vamos a hacer?
+* ¿Cómo va a ser consumido por el cliente?
 
-## Personnel
-* Who are on this project:
-	* Microsoft:
-		* Project lead
+## Personal
+* ¿Quiénes están en este proyecto?
+	* Empresa a cargo del proyecto:
+		* Jefe de proyecto
 		* PM
-		* Data scientist(s)
-		* Account manager
-	* Client:
-		* Data administrator
-		* Business contact
+		* Científico(s) de datos
+		* Director de cuentas
+	* Cliente:
+		* Administrador de datos
+		* Contacto con la empresa
 	
-## Metrics
-* What are the qualitative objectives? (e.g. reduce user churn)
-* What is a quantifiable metric  (e.g. reduce the fraction of users with 4-week inactivity)
-* Quantify what improvement in the values of the metrics are useful for the customer scenario (e.g. reduce the  fraction of users with 4-week inactivity by 20%) 
-* What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
-* How will we measure the metric? (e.g. A/B test on a specified subset for a specified period; or comparison of performance after implementation to baseline)
+## Métricas
+* ¿Cuáles son los objetivos cualitativos? (por ejemplo, reducir la fuga de usuarios)
+* ¿Cuáles son las métricas cuantificables (por ejemplo, reducir la fracción de usuarios con 4 semanas de inactividad)
+* Cuantificar qué mejora de los valores de la métrica es útil para el escenario del cliente (por ejemplo, reducir la fracción de usuarios con inactividad de 4 semanas en un 20%) 
+* ¿Cuál es el valor de referencia (actual) de la métrica? (por ejemplo, fracción actual de usuarios con inactividad de 4 semanas = 60%)
+* ¿Cómo mediremos la métrica? (por ejemplo, prueba A/B en un subconjunto específico durante un periodo determinado; o comparación del rendimiento después de la implementación con la línea de base)
 
 ## Plan
-* Phases (milestones), timeline, short description of what we'll do in each phase.
+## Fases (hitos), calendario, breve descripción de lo que haremos en cada fase.
 
-## Architecture
-* Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.)
-* Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
-  * all the data, 
-  * after some pre-aggregation on-prem,
-  * Sampled data enough for modeling 
+## Arquitectura
+## Datos
+  ## ¿Qué datos esperamos? Datos en bruto en las fuentes de datos del cliente (por ejemplo, archivos on-prem, SQL, Hadoop on-prem, etc.)
+* Movimiento de datos desde on-prem a Azure utilizando ADF u otras herramientas de movimiento de datos (Azcopy, EventHub, etc.) para mover
+  * Todos los datos, 
+  * después de una preagregación en el sistema local,
+  * datos muestreados suficientes para la modelización 
 
-* What tools and data storage/analytics resources will be used in the solution e.g.,
-  * ASA for stream aggregation
-  * HDI/Hive/R/Python for feature construction, aggregation and sampling
-  * AzureML for modeling and web service operationalization
-* How will the score or operationalized web service(s) (RRS and/or BES) be consumed in the business workflow of the customer? If applicable, write down pseudo code for the APIs of the web service calls.
-  * How will the customer use the model results to make decisions
-  * Data movement pipeline in production
-  * Make a 1 slide diagram showing the end to end data flow and decision architecture
-    * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+* Qué herramientas y recursos de almacenamiento/análisis de datos se utilizarán en la solución, por ejemplo
+  * ASA para la agregación de flujos
+  * HDI/Hive/R/Python para la construcción de características, agregación y muestreo
+  * AzureML para el modelado y la operacionalización del servicio web
+* ¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.
+  * ¿Cómo utilizará el cliente los resultados del modelo para tomar decisiones?
+  * Canalización del movimiento de datos en producción
+  * Realice un diagrama de 1 diapositiva que muestre el flujo de datos de extremo a extremo y la arquitectura de decisiones
+    * Si hay un cambio sustancial en el flujo de trabajo del negocio del cliente, haga un diagrama antes/después que muestre el flujo de datos.
 
-## Communication
-* How will we keep in touch? Weekly meetings?
-* Who are the contact persons on both sides?
+## Comunicación
+* ¿Cómo nos mantendremos en contacto? ¿Reuniones semanales?
+* ¿Quiénes son las personas de contacto de ambas partes?
+

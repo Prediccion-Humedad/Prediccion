@@ -1,62 +1,62 @@
-# Exit Report of Project <X> for Customer <Y>
+# Informe de salida del proyecto <X> para el cliente <Y>
 
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
+Instrucciones: Plantilla de criterios de salida para proyectos de ciencia de datos. Se trata de un documento conciso que incluye una visión general de todo el proyecto, con detalles de cada etapa y aprendizaje. Si una sección no es aplicable (por ejemplo, el proyecto no incluyó un modelo ML), simplemente marque esa sección como "No aplicable". Se sugiere una longitud de entre 5 y 20 páginas. El código debe estar en su mayor parte en el repositorio de código (no en este documento).
 
-Customer: <Enter Customer Name\>
+Cliente: <Ingrese el nombre del cliente>
 
-Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
+Miembros del equipo: <Ingrese los nombres de los miembros del equipo. Por favor, introduzca también los nombres de las partes relevantes, como el líder del equipo, el equipo de cuentas, las partes interesadas del negocio, etc.
 
-##	Overview
+## Resumen
 
-<Executive summary of entire solution, brief non-technical overview\>
+<Resumen ejecutivo de toda la solución, breve visión general no técnica>
 
-##	Business Domain
-<Industry, business domain of customer\>
+## Dominio de negocio
+<Sector, ámbito de negocio del cliente>
 
-##	Business Problem
-<Business problem and exact use case(s), why it matters\>
+## Problema de negocio
+<Problema empresarial y caso(s) de uso exacto(s), por qué es importante>
 
-##	Data Processing
-<Schema of original datasets, how data was processed, final input data schema for model\>
+## Procesamiento de datos
+<Esquema de los conjuntos de datos originales, cómo se han procesado los datos, esquema final de los datos de entrada para el modelo>
 
-##	Modeling, Validation
-<Modeling techniques used, validation results, details of how validation conducted\>
+## Modelización, validación
+<Técnicas de modelado utilizadas, resultados de la validación, detalles de cómo se ha llevado a cabo la validación>
 
-##	Solution Architecture
-<Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
+## Arquitectura de la solución
+<Arquitectura de la solución, describa claramente si se ha implementado realmente o es una arquitectura propuesta. Incluya el diagrama y los detalles pertinentes para reproducir una arquitectura similar. Incluya detalles de por qué se eligió esta arquitectura frente a otras arquitecturas que se consideraron, si es relevante.
 
-##	Benefits
+## Beneficios
 	
-###	Company Benefit (internal only. Double check if you want to share this with your customer)
-<What did our company gain from this engagement? ROI, revenue,  etc\>
+### Beneficio de la empresa (sólo interno. Compruebe si quiere compartir esto con su cliente)
+<¿Qué ganó nuestra empresa con este compromiso? ROI, ingresos, etc.
 
-###	Customer Benefit
-What is the benefit (ROI, savings, productivity gains etc)  for the customer? If just POC, what is estimated ROI? If exact metrics are not available, why does it have impact for the customer?\>
+### Beneficio para el cliente
+¿Cuál es el beneficio (ROI, ahorro, aumento de la productividad, etc.) para el cliente? Si sólo se trata de un POC, ¿cuál es el ROI estimado? Si no se dispone de métricas exactas, ¿por qué tiene impacto para el cliente?
 
-##	Learnings
+## Aprendizajes
 
-### 	Project Execution
-<Learnings around the customer engagement process\>
+### Ejecución del proyecto
+<Aprendizajes en torno al proceso de compromiso con el cliente>
 
-### Data science / Engineering
-<Learnings related to data science/engineering, tips/tricks, etc\>
+### Ciencia de los datos / Ingeniería
+<Aprendizajes relacionados con la ciencia de los datos/ingeniería, consejos/trucos, etc.
 
 
-### Domain
-<Learnings around the business domain, \>
+### Dominio
+<Aprendizajes en torno al dominio del negocio, \>
 
-### Product
-<Learnings around the products and services utilized in the solution \>
+### Producto
+<Aprendizaje en torno a los productos y servicios utilizados en la solución>
 
-###	What's unique about this project, specific challenges
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
+### Qué es lo único de este proyecto, retos específicos
+<Cuestiones específicas o configuración, cosas únicas, desafíos específicos que tuvieron que ser abordados durante el compromiso y cómo se lograron>
 
-##	Links
-<Links to published case studies, etc.; Link to git repository where all code sits\>
+## Enlaces
+<Enlaces a estudios de casos publicados, etc.; Enlace al repositorio git donde se encuentra todo el código>
 
-##	Next Steps
+## Próximos pasos
  
-<Next steps. These should include milestones for follow-ups and who 'owns' this action. E.g. Post- Proof of Concept check-in on status on 12/1/2016 by X, monthly check-in meeting by Y, etc.\>
+<Siguientes pasos. Deben incluir hitos para el seguimiento y quién es el "dueño" de esta acción. Por ejemplo, comprobación del estado de la prueba de concepto el 1 de diciembre de 2016 por parte de X, reunión mensual de comprobación por parte de Y, etc.
 
-## Appendix
-<Other material that seems relevant – try to keep non-appendix to <20 pages but more details can be included in appendix if needed\>
+## Apéndice
+<Otro material que parezca relevante - trate de mantener el no apéndice a <20 páginas pero se pueden incluir más detalles en el apéndice si es necesario>
