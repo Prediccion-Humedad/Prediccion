@@ -57,7 +57,7 @@ El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 di
 		* Científico(s) de datos
       * David Berrio (daberriop@unal.edu.co)
       * Ivan Dario Ayala (idayalaf@unal.edu.co) 
-      * Oscar Danilo Guzman (odguzmanv@unal.edu.co )
+      * Oscar Danilo Guzmán (odguzmanv@unal.edu.co )
 		* Director de cuentas
 	* Cliente:
 		* Administrador de datos : David Berrio
@@ -72,8 +72,8 @@ El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 di
   * Reducción de 50% de producto no conforme asociado a fallas
   * Reducción de tiempos de espera para determinar si los ajustes realizados a las variables de control producirán los resultados esperados.
 * ¿Cuál es el valor de referencia (actual) de la métrica? (por ejemplo, fracción actual de usuarios con inactividad de 4 semanas = 60%)
-  * Promedio de kilos perdidos en 110 Horas de Producción 680 Kg
-  * Promedio tiempo de espera después de realizar cambio en las variables : 1.5 Horas
+  * Promedio de kilos perdidos en 110 Horas de Producción 680 Kg de 75.900 Kg de materia prima total utilizada, un equivalente a 0.8% del total, $476 dolares ($0.7 dolares por Kg) siendo ese el promedio de perdidas en fallas cada semana.
+  * Promedio tiempo de espera después de realizar cambio en las variables: 1.5 Horas
 * ¿Cómo mediremos la métrica? (por ejemplo, prueba A/B en un subconjunto específico durante un periodo determinado; o comparación del rendimiento después de la implementación con la línea de base)
   * Asertividad del modelo para predecir
   * Aumento de control y trazabilidad de los ajustes de variables de control en la linea.
