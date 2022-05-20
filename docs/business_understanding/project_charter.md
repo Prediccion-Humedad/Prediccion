@@ -35,7 +35,7 @@ La pasta ingresa al horno cada 35.2 seg , moviendose linealmente a traves del tu
 
 <img src = "https://i.ibb.co/brrcSB7/PL.png" alt = "Distribución de Sensores Humedad-Temperatura" width = "100%">  </img>
 [![Miniatura tomada de YouTube](https://i.ytimg.com/vi/Lox4kIJY248/maxresdefault.jpg)](https://www.youtube.com/watch?v=Lox4kIJY248 "Nuestra Planta")
-@[youtube]( Lox4kIJY248|https://www.youtube.com/watch?v=Lox4kIJY248)
+
 # Quién es el cliente, en qué ámbito empresarial se encuentra el cliente.
 El cliente es una empresa que se encuentra en el sector de fabricacion de productos de consumo masivo, cuenta con plantas de producción de alimentos con procesos estandarizados y nivel de automatización medio, el proyecto se enfocará en la planta de producción de pasta seca (pasta alimenticia)
 
@@ -76,7 +76,7 @@ El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 di
   * Promedio de kilos perdidos en 110 Horas de Producción 680 Kg de 75.900 Kg de materia prima total utilizada, un equivalente a 0.8% del total, $476 dolares ($0.7 dolares por Kg) siendo ese el promedio de perdidas en fallas cada semana.
   * Promedio de tiempo de espera para que la linea exprese el cambio en las variables: 1.5 Horas.
 * ¿Cómo mediremos la métrica? (por ejemplo, prueba A/B en un subconjunto específico durante un periodo determinado; o comparación del rendimiento después de la implementación con la línea de base)
-  * Asertividad del modelo para predecir
+  * Asertividad del modelo para predecir (Crossvalidation). 
   * Aumento de control y trazabilidad de los ajustes de variables de control en la linea.
 
 ## Plan
