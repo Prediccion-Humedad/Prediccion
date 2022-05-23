@@ -34,6 +34,8 @@ La pasta ingresa al horno cada 35.2 seg , moviendose linealmente a traves del tu
 
 
 <img src = "https://i.ibb.co/brrcSB7/PL.png" alt = "Distribución de Sensores Humedad-Temperatura" width = "100%">  </img>
+
+
 [![Miniatura tomada de YouTube](https://i.ytimg.com/vi/Lox4kIJY248/maxresdefault.jpg)](https://www.youtube.com/watch?v=Lox4kIJY248 "Nuestra Planta")
 
 # Quién es el cliente, en qué ámbito empresarial se encuentra el cliente.
