@@ -3,7 +3,7 @@
 
 | Nombre del conjunto de datos | Ubicación original                        | Ubicación de destino | Herramientas de movimiento de datos/Scripts | Enlace al informe |
 |------------------------------|-------------------------------------------|----------------------|---------------------------------------------|-------------------|
-| BDHumidity.csv               | Datos extraido de PLC linea de producción | Prediccion/docs/data/ | downloadFromGDrive.py            | https://github.com/Prediccion-Humedad/Prediccion/blob/main/docs/data/data_summary.md           |
+| BDHumidity.csv               | [Datos extraido de PLC linea de producción](https://drive.google.com/file/d/1qC4ef53pWlaKuV89QWTmj_eHlYUI7hrf/view?usp=sharing) | Prediccion/docs/data/ | downloadFromGDrive.py            | https://github.com/Prediccion-Humedad/Prediccion/blob/main/docs/data/data_summary.md           |
 
 * BDHumidity.csv. La información inicial es proporcionada por el cliente. Archivos planos en formato csv compartidos via mail extraidos de PLC.
 
@@ -35,7 +35,7 @@
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: |
-| dataset1 | [BDHumidity-processed.csv](https://drive.google.com/file/d/1fLFVfTDaV7-2QWo3qYnpPae5ff0IKxFC/view?usp=sharing) | [Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) |[Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf) Pag 4-6  |
+| dataset1 | [BDHumidity-processed.csv](https://drive.google.com/file/d/1-aJ3Gg6BjiO3rtpjQY_PibhNMZ7MEyqC/view?usp=sharing) | [Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) |[Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf) Pag 4-6  |
 
 * Se genera tensor de shape=(64, 7, 1) aplicando la funcion preprocess
 
