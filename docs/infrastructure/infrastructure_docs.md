@@ -1,10 +1,15 @@
-# Infraestructura
+# Infrastructura
 
-En esta carpeta puedes añadir documentos/guías de infraestructura que incluyen:
+## Configuracion de ambiente de desarrollo
 
-* Configuración y gestión de Docker/kubernetes.
-* Configuración basada en el servidor (recursos mínimos del sistema, configuración de VMs, configuración del servidor web, entre otros).
-* Configuración del entorno (pyenv, poetry, jupyter, rstudio).
-* Pipelines de ejecución (airflow, mlflow).
+### Prerequisitos
 
+- Pyenv [Instrucciones de instalacion](https://github.com/pyenv/pyenv#homebrew-in-macos)
+- Poetry [Instrucciones de instalacion](https://python-poetry.org/docs/)
 
+### Instalacion de dependencias
+
+```
+pyenv install 3.9.0
+poetry install
+```
