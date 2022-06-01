@@ -48,7 +48,7 @@ def Upload_Dicc(name):
 # In[5]:
 
 
-Data=pd.read_excel('Base De Datos Humedad PLC.xlsx')
+Data=pd.read_csv('BDHumidity.csv')
 # Data['Date']=fecha_MDA(Data['Date'])
 # Data['Time']=Data['Time'].astype(str)
 # Data.insert(0,'Date_Time',pd.to_datetime(Data['Date']+'-'+Data['Time'],format='%m-%d-%Y-%H:%M:%S'))
@@ -139,7 +139,7 @@ Data_Final.shape
 # In[19]:
 
 
-# Data_Final.to_excel('sfsdsdd.xlsx')
+# Data_Final.to_csv('BDHumidity-processed.csv')
 
 
 # In[21]:
