@@ -33,7 +33,7 @@ La pasta ingresa al horno cada 35.2 seg , moviendose linealmente a traves del tu
 
 
 
-<img src = "https://i.ibb.co/gTqfHB8/PL-Diagrama.jpg" alt = "Distribución de Sensores Humedad-Temperatura" width = "100%">  </img>
+![PLDiagrama](https://user-images.githubusercontent.com/105468175/171441354-6eb2ecf6-9e5a-4b64-a9e5-1433ab3979c3.png)
 
 
 [![Miniatura tomada de YouTube](https://i.ytimg.com/vi/Lox4kIJY248/maxresdefault.jpg)](https://www.youtube.com/watch?v=Lox4kIJY248 "Nuestra Planta")
@@ -100,7 +100,7 @@ El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 di
   * El usuario va a disponer de una API para ingresar las variables de control de la linea de secado para predicir la humedad en una zona determinada
   * El usuario va a poder visualizar el resultado del analisis en un dashboard conectado a la base de datos
   
-<img src = "https://i.ibb.co/gvT5py0/MLDS6-GROUP6.png" alt = "Diagrama de flujo de datos de extremo a extremo y la arquitectura de decisiones" width = "100%">  </img>
+![image](https://user-images.githubusercontent.com/105468175/171441430-554334a3-e7d6-4ffa-a876-8fc44224e14e.png)
 
 
 
