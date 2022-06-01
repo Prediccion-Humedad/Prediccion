@@ -14,6 +14,28 @@
 | ---:| ---: | ---: | ---: |
 | BDHumidity.csv | BDHumidity-processed  |[Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) | [Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf)|
 
+* dataset BDHumidity se aplican Regex para eliminar algunos caracteres especiales (r'\A\w{2}\W?\w{3}|\A\w{4,7}')) , se renombran las etiquetas usando el Diccionario Estaciones.txt y se seleccionan las características que se usaran.
+* dataset Data_filter se aplican desplazamiento de tiempo usando el diccionario Dicc_deltat
+* dataset Data_Final se genera dataframe con las caracterísitcas que se usaran
 
+| Features |
+|----------|
+| TE-201   |
+| ME-202   |
+| TE-202   |
+| ME-203   |
+| TE-203   |
+| TE-302   |
+| ME-302   |
+| ME-304   |
 
+*  Se genera BDHumidity-processed.csv
+
+## Feature Sets
+
+| Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
+| ---:| ---: | ---: | ---: |
+| dataset1 | [BDHumidity-processed.csv](https://drive.google.com/file/d/1fLFVfTDaV7-2QWo3qYnpPae5ff0IKxFC/view?usp=sharing) | [Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) |[Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf) |
+
+* Se genera tensor de shape=(64, 7, 1) aplicando la funcion preprocess
 
