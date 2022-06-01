@@ -35,7 +35,7 @@
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: |
-| dataset1 | [BDHumidity-processed.csv](https://drive.google.com/file/d/1fLFVfTDaV7-2QWo3qYnpPae5ff0IKxFC/view?usp=sharing) | [Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) |[Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf) |
+| dataset1 | [BDHumidity-processed.csv](https://drive.google.com/file/d/1fLFVfTDaV7-2QWo3qYnpPae5ff0IKxFC/view?usp=sharing) | [Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) |[Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf) Pag 4-6  |
 
 * Se genera tensor de shape=(64, 7, 1) aplicando la funcion preprocess
 
