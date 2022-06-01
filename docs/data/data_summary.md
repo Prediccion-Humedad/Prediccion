@@ -83,4 +83,7 @@ La variable objetivo es la predicción de la humedad ME-304
 
 ## Relación entre las variables explicativas y la variable objetivo
 
+El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 dias las 24 horas, los valores de humedad y/o temperatura deben encontrarse en los rangos establecidos para cada receta, un valor bajo de Humedad en el sensor 1 ME-202 se verá reflejado 24 minutos después en el sensor ME-203, predecir la forma en que cambiaran estos valores puede llevar al operador de la linea a tomar decisiones más rapidas que permitan garantizar el correcto secado de la pasta dentro de la linea
+
+La variable objetivo ME-304 corresponde al último valor de humedad,  las variables explicativas TE-** (Temperaturas de aire) y ME-202, 203, 302  (Humedad de la relativa de la zona) permitiran predecir el comportamiento de la humedad ME-304 y anticipar el efecto sobre el producto que va en la linea de secado.
 
