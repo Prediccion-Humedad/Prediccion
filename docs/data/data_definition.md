@@ -9,3 +9,11 @@
 
 
 
+## Processed Data
+| Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
+| ---:| ---: | ---: | ---: |
+| BDHumidity.csv | BDHumidity-processed  |[Preprocessing.py](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing.py) | [Preprocessing Report](https://github.com/Prediccion-Humedad/Prediccion/blob/main/scripts/preprocessing/Preprocessing-report.pdf)|
+
+
+
+
