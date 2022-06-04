@@ -16,30 +16,42 @@
 
 * ¿Qué tipo de modelo se ha construido?
 	*	Se construye un tensor de tamaño (64,7,1) float32
+	
 		 ![image](https://user-images.githubusercontent.com/44857719/171947322-07fd590e-01db-4ab7-b154-5f44ed914c08.png)
-	* 
+	*
 ## Descripción del modelo
 
 * Modelos y parámetros
 
-	* Descripción o imágenes del gráfico de flujo de datos
-  		* Si es AzureML, enlace a:
-    		* Experimento de entrenamiento
-    		* Flujo de trabajo de puntuación
-	* ¿Qué aprendiz(es) se utilizó(n)?
-	* Hiperparámetros del aprendizaje
+* Se prueban tres modelos con redes recurrentes obteniendo las siguientes características de cada 1.
 
-Se prueban tres modelos con redes recurrentes obteniendo las siguientes características de cada 1.
+* Modelo 1
 
-	![image]()
+![image](https://user-images.githubusercontent.com/105468175/172016697-3c570c68-f676-4e3b-954c-3b71f27f0ac9.png)
+
+* Modelo 2
+
+![image](https://user-images.githubusercontent.com/105468175/172016725-5f773e7d-deb6-4140-8e66-10158dc40138.png)
+
+* Modelo 3
+
+![image](https://user-images.githubusercontent.com/105468175/172016747-4ade576d-20a9-4e51-b211-1418643ac44a.png)
+
 
 ## Resultados (Rendimiento del modelo)
-* Gráficos ROC/Lift, AUC, R^2, MAPE, según proceda
-* Gráficos de rendimiento para los barridos de parámetros, si procede
+* Modelo 1
 
-## Comprensión del modelo
+![image](https://user-images.githubusercontent.com/105468175/172016834-faccff1b-e063-4cfa-b24e-3fa942593285.png)
 
-* Importancia de las variables (importancia)
+* Modelo 2
+
+![image](https://user-images.githubusercontent.com/105468175/172016854-ad02fb32-8f68-4323-beb3-c4e7683d61f9.png)
+
+* Modelo 3
+
+![image](https://user-images.githubusercontent.com/105468175/172016872-5635ea72-f862-44c9-8860-ec44358a1391.png)
+
+
 
 ## Conclusión y debates para los próximos pasos
 
