@@ -44,7 +44,7 @@
 
 * Conclusión sobre la evaluación de la viabilidad de la tarea de aprendizaje automático
 
-* Debate sobre el sobreajuste (si procede)
+* Con los datos obtenidos el modelo no está sobre ajustao. Se puede observar viabilidad en la predicción de la humedad con el modelo generado.
 
 * ¿Qué otras características pueden generarse a partir de los datos actuales?
 
