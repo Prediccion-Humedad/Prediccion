@@ -29,6 +29,9 @@
 	* ¿Qué aprendiz(es) se utilizó(n)?
 	* Hiperparámetros del aprendizaje
 
+Se prueban tres modelos con redes recurrentes obteniendo las siguientes características de cada 1.
+
+	![image]()
 
 ## Resultados (Rendimiento del modelo)
 * Gráficos ROC/Lift, AUC, R^2, MAPE, según proceda
@@ -38,15 +41,12 @@
 
 * Importancia de las variables (importancia)
 
-## Comprensión del modelo
-
 ## Conclusión y debates para los próximos pasos
 
-* Conclusión sobre la evaluación de la viabilidad de la tarea de aprendizaje automático
+* Se puede observar viabilidad en la predicción de la humedad con el modelo generado.
 
-* Con los datos obtenidos el modelo no está sobre ajustao. Se puede observar viabilidad en la predicción de la humedad con el modelo generado.
+* Con los datos obtenidos el modelo no está sobre ajustao. 
 
-* ¿Qué otras características pueden generarse a partir de los datos actuales?
+* El tiempo podría añadirse como una característica adicional del modelo, sin embargo no fue necesario.
 
-* Qué otras fuentes de datos relevantes están disponibles para ayudar al modelado
-
+* Con el fin de retroalimentar el modelo se podría agregar los setpoints de las variables de control del PLC utilizado para la obtención de los datos.
