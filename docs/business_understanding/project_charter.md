@@ -90,12 +90,12 @@ El proceso de fabricación de pastas es continuo, la planta trabaja durante 6 di
   * Datos en texto plano en formato csv con registro de variables extraidos de PLC de linea de producción.
 
 * Qué herramientas y recursos de almacenamiento/análisis de datos se utilizarán en la solución, por ejemplo
-  * Proveedor de servicios en la nueve -> 
-  * Framework API REST -> 
+  * Proveedor de servicios en la nueve -> **Heroku**
+  * Framework API REST -> **Streamlit**
   * Lenguaje de Programacion -> **pyhton**
   * Investigacion y generacion de modelos -> **Google colab y jupyter notebooks**
-  * Provedor de base de datos -> 
-  * Dsahboard -> 
+  * Dashboard -> **Matplotlib**
+
 * ¿Cómo se consumirá la puntuación o el servicio(s) web operacionalizado(s) (RRS y/o BES) en el flujo de trabajo empresarial del cliente? Si procede, escriba el pseudocódigo de las API de las llamadas al servicio web.
   * El usuario va a disponer de una API para ingresar las variables de control de la linea de secado para predicir la humedad en una zona determinada
   * El usuario va a poder visualizar el resultado del analisis en un dashboard conectado a la base de datos
