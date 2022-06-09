@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "preprocessing"
+name = "preprocessing_humidity"
 version = "0.1.0"
 description = "Terminal application to generate humidity Prediction."
 authors = ["David Berrio, Oscar Guzman, Ivan D Ayala"]
