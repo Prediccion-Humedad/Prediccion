@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import tensorflow as tf
 from tensorflow.keras.models import Model
+from PIL import Image
+import matplotlib.pyplot as plt
 import streamlit as st
 
 #Cargar modelo
@@ -48,13 +50,24 @@ def main():
         return model.predict(X)
     # Generando predicción
     if st.button('RUN'):
-         st.success(f"La humedad en la zona Me-304 dentro de 74 min sera de {pred(model_GRU,test)[0,0]} %Hr")
- #Example for test x= [63.965027,91.662498,74.764984,83.300003,77.328552,79.603699,69.456253	] , y= #Real 77.256248   
-    from PIL import Image
-    
-    image = Image.open("PLDiagrama.png")
+        
+        st.success(f"La humedad en la zona Me-304 dentro de 74 min sera de {pred(model_GRU,test)[0,0]} %Hr")
+        #Graficar proceso de secado-predicción
+        df_graf=df.copy()
+        df_graf[7] = pred(model_GRU,test)[0,0]
+        fig, ax = plt.subplots(figsize= (6, 1.5))
+        markers_on = [7]
+        label_x = ['TE-201', 'ME-202', 'TE-202', 'ME-203', 'TE-203', 'TE-302','ME-302','ME-304']
+        plt.plot(label_x,np.reshape(df_graf.values , (8,1)), '--o',markevery=markers_on)
+        plt.title("Variación de Humedad/temperatura Secado", fontsize=13);
+        st.pyplot(fig)
 
+     #Grafica de linea de fabriación
+    image = Image.open("PLDiagrama.png")
     st.image(image, caption='Linea de fabricación')
+    
+ #Example for test x= [63.965027,91.662498,74.764984,83.300003,77.328552,79.603699,69.456253	] , y= #Real 77.256248   
+
     
 
 if __name__ == '__main__':

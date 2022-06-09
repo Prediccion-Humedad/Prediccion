@@ -2,3 +2,4 @@ tensorflow-cpu
 pandas
 streamlit
 pillow
+matplotlit
