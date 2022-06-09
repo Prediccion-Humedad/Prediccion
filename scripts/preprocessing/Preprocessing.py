@@ -1,22 +1,14 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[20]:
-
-
 import numpy as np
 import pandas as pd
 import tensorflow as tf
 from datetime import datetime,timedelta
 
 
-# In[2]:
-
-
 pd.set_option("max_columns", 100)
 
-
-# In[3]:
 
 
 def fecha_MDA(value):
@@ -31,7 +23,7 @@ def fecha_MDA(value):
     return date
 
 
-# In[4]:
+
 
 
 def Upload_Dicc(name):
