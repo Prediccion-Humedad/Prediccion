@@ -2,6 +2,8 @@ from training.types.models import LayerKind, NN_Prediction
 from training.types.hparams import (LSTM_HParams,RNN_HParams, GRU_HParams)
 from tensorflow.keras.layers import GRU, Dense, Input, SimpleRNN,LSTM
 from pydantic import BaseModel
+import warnings
+warnings.filterwarnings('ignore')
 
 class ModelProxy:
     layer_table = {
