@@ -1,6 +1,6 @@
 from argparse import ArgumentParser
 # from Preprocessing import Upload_Data
-from Preprocessing import Upload_Data
+from preprocessing_humidity.Preprocessing import Upload_Data
 
 def main()-> int:
     parser=ArgumentParser(description='Terminal utility to processing raw data.')
