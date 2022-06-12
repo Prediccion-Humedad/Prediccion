@@ -19,9 +19,8 @@ def make_parser() -> ArgumentParser:
 def main():
     parser = make_parser() 
     args = parser.parse_args()
-    dataset = (HumidityDataLoader().add_path("/mnt/hgfs/Linux/BDHumidity-processed.csv").load())
-    data = dataset.get_data() 
-    print(dataset)
+    dataset = (HumidityDataLoader().add_path("/mnt/hgfs/Linux/BDHumidity-processed.csv").load().get_data())
+    print(dataset.columns)
 #     extractor = (VidhyaSentimentsFeatureExtractor ().add_data(data)
 # .add_fields(
 # FeatureExtractionFields( label="label\ text="tweet"

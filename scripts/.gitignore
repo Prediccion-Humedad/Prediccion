@@ -5,3 +5,4 @@
 *.xlsx
 *.ipynb
 **.ipynb_checkpoints
+*.parquet
