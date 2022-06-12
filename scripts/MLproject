@@ -1,7 +1,6 @@
 name:"Prediccion de Humedad"
 
 entry_points:
-	training:
-		parameters:
-		
+    training:
+        parameters:
 		command:"python scripts/training.py 
