@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "training"
+version = "0.1.0"
+description = "\"Entrenamiento de los modeos de redes recurrentes\""
+authors = ["\"David Berrio, Oscar Guzman, Ivan Ayala\""]
+
+[tool.poetry.dependencies]
+python = ">3.8,<3.11"
+pandas = "^1.4.2"
+tensorflow = "^2.9.1"
+numpy = "^1.22.4"
+mlflow = "^1.26.1"
+pydantic = "^1.9.1"
+
+[tool.poetry.dev-dependencies]
+ipython = "^8.4.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+training = "training.main:main"
