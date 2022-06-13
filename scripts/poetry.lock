@@ -143,6 +143,17 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "dill"
+version = "0.3.5.1"
+description = "serialize all of python"
+category = "main"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*"
+
+[package.extras]
+graph = ["objgraph (>=1.7.2)"]
+
+[[package]]
 name = "docker"
 version = "5.0.3"
 description = "A Python library for the Docker Engine API."
@@ -166,6 +177,36 @@ description = "Discover and load entry points from installed packages."
 category = "main"
 optional = false
 python-versions = ">=3.6"
+
+[[package]]
+name = "etils"
+version = "0.6.0"
+description = "Collection of common python utils"
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+etils = {version = "*", extras = ["epy"], optional = true, markers = "extra == \"epath\""}
+importlib_resources = {version = "*", optional = true, markers = "extra == \"epath\""}
+typing_extensions = {version = "*", optional = true, markers = "extra == \"epy\""}
+zipp = {version = "*", optional = true, markers = "extra == \"epath\""}
+
+[package.extras]
+all = ["etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils", "etils"]
+array-types = ["numpy"]
+dev = ["pytest", "pytest-subtests", "pytest-xdist", "pylint (>=2.6.0)", "yapf", "chex"]
+ecolab = ["jupyter", "numpy", "mediapy", "etils"]
+edc = ["etils"]
+enp = ["numpy", "etils"]
+epath = ["importlib-resources", "zipp", "etils"]
+epath-no-tf = ["etils"]
+epy = ["typing-extensions"]
+etqdm = ["absl-py", "tqdm", "etils"]
+etree = ["etils", "etils", "etils", "etils"]
+etree-dm = ["dm-tree", "etils"]
+etree-jax = ["jax", "etils"]
+etree-tf = ["tf-nightly", "etils"]
 
 [[package]]
 name = "executing"
@@ -277,6 +318,20 @@ python-versions = "*"
 
 [package.dependencies]
 six = "*"
+
+[[package]]
+name = "googleapis-common-protos"
+version = "1.56.2"
+description = "Common protobufs used in Google APIs"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+protobuf = ">=3.15.0,<4.0.0dev"
+
+[package.extras]
+grpc = ["grpcio (>=1.0.0,<2.0.0dev)"]
 
 [[package]]
 name = "greenlet"
@@ -438,6 +493,14 @@ MarkupSafe = ">=2.0"
 
 [package.extras]
 i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "joblib"
+version = "1.1.0"
+description = "Lightweight pipelining with Python functions"
+category = "main"
+optional = false
+python-versions = ">=3.6"
 
 [[package]]
 name = "keras"
@@ -682,6 +745,20 @@ flask = "*"
 prometheus-client = "*"
 
 [[package]]
+name = "promise"
+version = "2.3"
+description = "Promises/A+ implementation for Python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+six = "*"
+
+[package.extras]
+test = ["pytest (>=2.7.3)", "pytest-cov", "coveralls", "futures", "pytest-benchmark", "mock"]
+
+[[package]]
 name = "prompt-toolkit"
 version = "3.0.29"
 description = "Library for building powerful interactive command lines in Python"
@@ -877,6 +954,26 @@ python-versions = ">=3.6,<4"
 pyasn1 = ">=0.1.3"
 
 [[package]]
+name = "scikit-learn"
+version = "1.1.1"
+description = "A set of python modules for machine learning and data mining"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+joblib = ">=1.0.0"
+numpy = ">=1.17.3"
+scipy = ">=1.3.2"
+threadpoolctl = ">=2.0.0"
+
+[package.extras]
+benchmark = ["matplotlib (>=3.1.2)", "pandas (>=1.0.5)", "memory-profiler (>=0.57.0)"]
+docs = ["matplotlib (>=3.1.2)", "scikit-image (>=0.14.5)", "pandas (>=1.0.5)", "seaborn (>=0.9.0)", "memory-profiler (>=0.57.0)", "sphinx (>=4.0.1)", "sphinx-gallery (>=0.7.0)", "numpydoc (>=1.2.0)", "Pillow (>=7.1.2)", "sphinx-prompt (>=1.3.0)", "sphinxext-opengraph (>=0.4.2)"]
+examples = ["matplotlib (>=3.1.2)", "scikit-image (>=0.14.5)", "pandas (>=1.0.5)", "seaborn (>=0.9.0)"]
+tests = ["matplotlib (>=3.1.2)", "scikit-image (>=0.14.5)", "pandas (>=1.0.5)", "pytest (>=5.0.1)", "pytest-cov (>=2.9.0)", "flake8 (>=3.8.2)", "black (>=22.3.0)", "mypy (>=0.770)", "pyamg (>=4.0.0)", "numpydoc (>=1.2.0)"]
+
+[[package]]
 name = "scipy"
 version = "1.8.1"
 description = "SciPy: Scientific Library for Python"
@@ -894,6 +991,17 @@ description = "Python 2 and 3 compatibility utilities"
 category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "sklearn"
+version = "0.0"
+description = "A set of python modules for machine learning and data mining"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+scikit-learn = "*"
 
 [[package]]
 name = "smmap"
@@ -1039,6 +1147,63 @@ typing-extensions = ">=3.6.6"
 wrapt = ">=1.11.0"
 
 [[package]]
+name = "tensorflow-datasets"
+version = "4.6.0"
+description = "tensorflow/datasets is a library of datasets ready to use with TensorFlow."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+absl-py = "*"
+dill = "*"
+etils = {version = "*", extras = ["epath"]}
+importlib-resources = {version = "*", markers = "python_version < \"3.9\""}
+numpy = "*"
+promise = "*"
+protobuf = ">=3.12.2"
+requests = ">=2.19.0"
+six = "*"
+tensorflow-metadata = "*"
+termcolor = "*"
+toml = "*"
+tqdm = "*"
+
+[package.extras]
+aflw2k3d = ["scipy"]
+beir = ["apache-beam"]
+ble_wind_field = ["gcsfs", "zarr"]
+c4 = ["apache-beam", "gcld3", "langdetect", "nltk", "tldextract"]
+cats_vs_dogs = ["matplotlib"]
+colorectal_histology = ["pillow"]
+common_voice = ["pydub"]
+dev = ["jax", "jupyter", "pytest", "pytest-shard", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "pylint (>=2.6.0)", "yapf"]
+duke_ultrasound = ["scipy"]
+eurosat = ["scikit-image", "tifffile", "imagecodecs"]
+groove = ["pretty-midi", "pydub"]
+gtzan = ["pydub"]
+imagenet2012_corrupted = ["opencv-python", "scikit-image", "scipy"]
+librispeech = ["pydub"]
+lsun = ["tensorflow-io"]
+matplotlib = ["matplotlib"]
+nsynth = ["crepe (>=0.0.11)", "librosa", "scikit-learn (==0.20.3)"]
+ogbg_molpcba = ["pandas", "networkx"]
+pet_finder = ["pandas"]
+robonet = ["h5py"]
+robosuite_panda_pick_place_can = ["envlogger"]
+smartwatch_gestures = ["pandas"]
+svhn = ["scipy"]
+tensorflow = ["tensorflow (>=2.1)"]
+tensorflow-data-validation = ["tensorflow-data-validation"]
+tests-all = ["jax", "jupyter", "pytest", "pytest-shard", "pytest-xdist", "pandas", "pydub", "apache-beam", "pyyaml", "scipy", "gcsfs", "zarr", "gcld3", "langdetect", "nltk", "tldextract", "matplotlib", "pillow", "scikit-image", "tifffile", "imagecodecs", "pretty-midi", "opencv-python", "networkx", "h5py", "envlogger", "mwparserfromhell", "bs4", "lxml", "pycocotools"]
+the300w_lp = ["scipy"]
+wider_face = ["pillow"]
+wiki_dialog = ["apache-beam"]
+wikipedia = ["mwparserfromhell", "apache-beam"]
+wsc273 = ["bs4", "lxml"]
+youtube_vis = ["pycocotools"]
+
+[[package]]
 name = "tensorflow-estimator"
 version = "2.9.0"
 description = "TensorFlow Estimator."
@@ -1062,12 +1227,58 @@ tensorflow-gpu = ["tensorflow-gpu (>=2.9.0,<2.10.0)"]
 tensorflow-rocm = ["tensorflow-rocm (>=2.9.0,<2.10.0)"]
 
 [[package]]
+name = "tensorflow-metadata"
+version = "1.8.0"
+description = "Library and standards for schema and statistics."
+category = "main"
+optional = false
+python-versions = ">=3.7,<4"
+
+[package.dependencies]
+absl-py = ">=0.9,<2.0.0"
+googleapis-common-protos = ">=1.52.0,<2"
+protobuf = ">=3.13,<4"
+
+[[package]]
 name = "termcolor"
 version = "1.1.0"
 description = "ANSII Color formatting for output in terminal."
 category = "main"
 optional = false
 python-versions = "*"
+
+[[package]]
+name = "threadpoolctl"
+version = "3.1.0"
+description = "threadpoolctl"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "toml"
+version = "0.10.2"
+description = "Python Library for Tom's Obvious, Minimal Language"
+category = "main"
+optional = false
+python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*"
+
+[[package]]
+name = "tqdm"
+version = "4.64.0"
+description = "Fast, Extensible Progress Meter"
+category = "main"
+optional = false
+python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[package.extras]
+dev = ["py-make (>=0.1.0)", "twine", "wheel"]
+notebook = ["ipywidgets (>=6)"]
+slack = ["slack-sdk"]
+telegram = ["requests"]
 
 [[package]]
 name = "traitlets"
@@ -1168,7 +1379,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = ">3.8,<3.11"
-content-hash = "6610f64f95407e5c223a011f19ea6156a448214fc55a789327403168ae140a8c"
+content-hash = "cf9aa9d7d993de64486e5a59576caf3228b3cb5f7681b436989a7b5c9efecf5a"
 
 [metadata.files]
 absl-py = [
@@ -1227,6 +1438,10 @@ decorator = [
     {file = "decorator-5.1.1-py3-none-any.whl", hash = "sha256:b8c3f85900b9dc423225913c5aace94729fe1fa9763b38939a95226f02d37186"},
     {file = "decorator-5.1.1.tar.gz", hash = "sha256:637996211036b6385ef91435e4fae22989472f9d571faba8927ba8253acbc330"},
 ]
+dill = [
+    {file = "dill-0.3.5.1-py2.py3-none-any.whl", hash = "sha256:33501d03270bbe410c72639b350e941882a8b0fd55357580fbc873fba0c59302"},
+    {file = "dill-0.3.5.1.tar.gz", hash = "sha256:d75e41f3eff1eee599d738e76ba8f4ad98ea229db8b085318aa2b3333a208c86"},
+]
 docker = [
     {file = "docker-5.0.3-py2.py3-none-any.whl", hash = "sha256:7a79bb439e3df59d0a72621775d600bc8bc8b422d285824cb37103eab91d1ce0"},
     {file = "docker-5.0.3.tar.gz", hash = "sha256:d916a26b62970e7c2f554110ed6af04c7ccff8e9f81ad17d0d40c75637e227fb"},
@@ -1234,6 +1449,10 @@ docker = [
 entrypoints = [
     {file = "entrypoints-0.4-py3-none-any.whl", hash = "sha256:f174b5ff827504fd3cd97cc3f8649f3693f51538c7e4bdf3ef002c8429d42f9f"},
     {file = "entrypoints-0.4.tar.gz", hash = "sha256:b706eddaa9218a19ebcd67b56818f05bb27589b1ca9e8d797b74affad4ccacd4"},
+]
+etils = [
+    {file = "etils-0.6.0-py3-none-any.whl", hash = "sha256:e47b14402f2fc883c70a394e86b3236e4929cfd90187fba58d2f4d3eb2e07c05"},
+    {file = "etils-0.6.0.tar.gz", hash = "sha256:6677241051835d0db11c4947bcad938f57b51ea102290624f892f1e4e51b70e5"},
 ]
 executing = [
     {file = "executing-0.8.3-py2.py3-none-any.whl", hash = "sha256:d1eef132db1b83649a3905ca6dd8897f71ac6f8cac79a7e58a1a09cf137546c9"},
@@ -1271,6 +1490,10 @@ google-pasta = [
     {file = "google-pasta-0.2.0.tar.gz", hash = "sha256:c9f2c8dfc8f96d0d5808299920721be30c9eec37f2389f28904f454565c8a16e"},
     {file = "google_pasta-0.2.0-py2-none-any.whl", hash = "sha256:4612951da876b1a10fe3960d7226f0c7682cf901e16ac06e473b267a5afa8954"},
     {file = "google_pasta-0.2.0-py3-none-any.whl", hash = "sha256:b32482794a366b5366a32c92a9a9201b107821889935a02b3e51f6b432ea84ed"},
+]
+googleapis-common-protos = [
+    {file = "googleapis-common-protos-1.56.2.tar.gz", hash = "sha256:b09b56f5463070c2153753ef123f07d2e49235e89148e9b2459ec8ed2f68d7d3"},
+    {file = "googleapis_common_protos-1.56.2-py2.py3-none-any.whl", hash = "sha256:023eaea9d8c1cceccd9587c6af6c20f33eeeb05d4148670f2b0322dc1511700c"},
 ]
 greenlet = [
     {file = "greenlet-1.1.2-cp27-cp27m-macosx_10_14_x86_64.whl", hash = "sha256:58df5c2a0e293bf665a51f8a100d3e9956febfbf1d9aaf8c0677cf70218910c6"},
@@ -1439,6 +1662,10 @@ jinja2 = [
     {file = "Jinja2-3.1.2-py3-none-any.whl", hash = "sha256:6088930bfe239f0e6710546ab9c19c9ef35e29792895fed6e6e31a023a182a61"},
     {file = "Jinja2-3.1.2.tar.gz", hash = "sha256:31351a702a408a9e7595a8fc6150fc3f43bb6bf7e319770cbc0db9df9437e852"},
 ]
+joblib = [
+    {file = "joblib-1.1.0-py2.py3-none-any.whl", hash = "sha256:f21f109b3c7ff9d95f8387f752d0d9c34a02aa2f7060c2135f465da0e5160ff6"},
+    {file = "joblib-1.1.0.tar.gz", hash = "sha256:4158fcecd13733f8be669be0683b96ebdbbd38d23559f54dca7205aea1bf1e35"},
+]
 keras = [
     {file = "keras-2.9.0-py2.py3-none-any.whl", hash = "sha256:55911256f89cfc9343c9fbe4b61ec45a2d33d89729cbe1ab9dcacf8b07b8b6ab"},
 ]
@@ -1591,6 +1818,9 @@ prometheus-client = [
 prometheus-flask-exporter = [
     {file = "prometheus_flask_exporter-0.20.2-py3-none-any.whl", hash = "sha256:946f8d631430258b9bf76c037a9f51a1d51f369cff84c8decc7e142e38d41197"},
     {file = "prometheus_flask_exporter-0.20.2.tar.gz", hash = "sha256:aab05c49880d12b7d4eaabee102cfe998da92ddaacf86ec4f37cfa08c00858da"},
+]
+promise = [
+    {file = "promise-2.3.tar.gz", hash = "sha256:dfd18337c523ba4b6a58801c164c1904a9d4d1b1747c7d5dbf45b693a49d93d0"},
 ]
 prompt-toolkit = [
     {file = "prompt_toolkit-3.0.29-py3-none-any.whl", hash = "sha256:62291dad495e665fca0bda814e342c69952086afb0f4094d0893d357e5c78752"},
@@ -1784,6 +2014,26 @@ rsa = [
     {file = "rsa-4.8-py3-none-any.whl", hash = "sha256:95c5d300c4e879ee69708c428ba566c59478fd653cc3a22243eeb8ed846950bb"},
     {file = "rsa-4.8.tar.gz", hash = "sha256:5c6bd9dc7a543b7fe4304a631f8a8a3b674e2bbfc49c2ae96200cdbe55df6b17"},
 ]
+scikit-learn = [
+    {file = "scikit-learn-1.1.1.tar.gz", hash = "sha256:3e77b71e8e644f86c8b5be7f1c285ef597de4c384961389ee3e9ca36c445b256"},
+    {file = "scikit_learn-1.1.1-cp310-cp310-macosx_10_13_x86_64.whl", hash = "sha256:102f51797cd8944bf44a038d106848ddf2804f2c1edf7aea45fba81a4fdc4d80"},
+    {file = "scikit_learn-1.1.1-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:723cdb278b1fa57a55f68945bc4e501a2f12abe82f76e8d21e1806cbdbef6fc5"},
+    {file = "scikit_learn-1.1.1-cp310-cp310-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:33cf061ed0b79d647a3e4c3f6c52c412172836718a7cd4d11c1318d083300133"},
+    {file = "scikit_learn-1.1.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:47464c110eaa9ed9d1fe108cb403510878c3d3a40f110618d2a19b2190a3e35c"},
+    {file = "scikit_learn-1.1.1-cp310-cp310-win_amd64.whl", hash = "sha256:542ccd2592fe7ad31f5c85fed3a3deb3e252383960a85e4b49a629353fffaba4"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-macosx_10_13_x86_64.whl", hash = "sha256:3be10d8d325821ca366d4fe7083d87c40768f842f54371a9c908d97c45da16fc"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-macosx_12_0_arm64.whl", hash = "sha256:b2db720e13e697d912a87c1a51194e6fb085dc6d8323caa5ca51369ca6948f78"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:e851f8874398dcd50d1e174e810e9331563d189356e945b3271c0e19ee6f4d6f"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:b928869072366dc138762fe0929e7dc88413f8a469aebc6a64adc10a9226180c"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-win32.whl", hash = "sha256:e9d228ced1214d67904f26fb820c8abbea12b2889cd4aa8cda20a4ca0ed781c1"},
+    {file = "scikit_learn-1.1.1-cp38-cp38-win_amd64.whl", hash = "sha256:f2d5b5d6e87d482e17696a7bfa03fe9515fdfe27e462a4ad37f3d7774a5e2fd6"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-macosx_10_13_x86_64.whl", hash = "sha256:0403ad13f283e27d43b0ad875f187ec7f5d964903d92d1ed06c51439560ecea0"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-macosx_12_0_arm64.whl", hash = "sha256:8fe80df08f5b9cee5dd008eccc672e543976198d790c07e5337f7dfb67eaac05"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:8ff56d07b9507fbe07ca0f4e5c8f3e171f74a429f998da03e308166251316b34"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:c2dad2bfc502344b869d4a3f4aa7271b2a5f4fe41f7328f404844c51612e2c58"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-win32.whl", hash = "sha256:22145b60fef02e597a8e7f061ebc7c51739215f11ce7fcd2ca9af22c31aa9f86"},
+    {file = "scikit_learn-1.1.1-cp39-cp39-win_amd64.whl", hash = "sha256:45c0f6ae523353f1d99b85469d746f9c497410adff5ba8b24423705b6956a86e"},
+]
 scipy = [
     {file = "scipy-1.8.1-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:65b77f20202599c51eb2771d11a6b899b97989159b7975e9b5259594f1d35ef4"},
     {file = "scipy-1.8.1-cp310-cp310-macosx_12_0_arm64.whl", hash = "sha256:e013aed00ed776d790be4cb32826adb72799c61e318676172495383ba4570aa4"},
@@ -1812,6 +2062,9 @@ scipy = [
 six = [
     {file = "six-1.16.0-py2.py3-none-any.whl", hash = "sha256:8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"},
     {file = "six-1.16.0.tar.gz", hash = "sha256:1e61c37477a1626458e36f7b1d82aa5c9b094fa4802892072e49de9c60c4c926"},
+]
+sklearn = [
+    {file = "sklearn-0.0.tar.gz", hash = "sha256:e23001573aa194b834122d2b9562459bf5ae494a2d59ca6b8aa22c85a44c0e31"},
 ]
 smmap = [
     {file = "smmap-5.0.0-py3-none-any.whl", hash = "sha256:2aba19d6a040e78d8b09de5c57e96207b09ed71d8e55ce0959eeee6c8e190d94"},
@@ -1892,6 +2145,10 @@ tensorflow = [
     {file = "tensorflow-2.9.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:212a4d97fb6dedff257703d7a2ce50b0b8ec23d955938083363aa7bc526918cc"},
     {file = "tensorflow-2.9.1-cp39-cp39-win_amd64.whl", hash = "sha256:1c2c6557f6bd7e0d3f1063e27346e4f1c4353db2b7751ac7451033b335fa4b7c"},
 ]
+tensorflow-datasets = [
+    {file = "tensorflow-datasets-4.6.0.tar.gz", hash = "sha256:9da2a65297e981f61c5f1cb45696066b9c4013d97803a6df74382bc24e2137cb"},
+    {file = "tensorflow_datasets-4.6.0-py3-none-any.whl", hash = "sha256:fc1f163668d449cb2280dedc458c25875aa92b665889a394dbd3dcff45978bfa"},
+]
 tensorflow-estimator = [
     {file = "tensorflow_estimator-2.9.0-py2.py3-none-any.whl", hash = "sha256:e9762bb302f51bc1eb2f35d19f0190a6a2d809d754d5def788c4328fe3746744"},
 ]
@@ -1913,8 +2170,23 @@ tensorflow-io-gcs-filesystem = [
     {file = "tensorflow_io_gcs_filesystem-0.26.0-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:bd285595afe03740553710ccdbd1397d69a8e48d758c731c0de1f1c5a71a9fe5"},
     {file = "tensorflow_io_gcs_filesystem-0.26.0-cp39-cp39-win_amd64.whl", hash = "sha256:2940b4ab6848ef5ec34dc3c140b5ae9eba0da13453da839c30ebe3461a6eb51d"},
 ]
+tensorflow-metadata = [
+    {file = "tensorflow_metadata-1.8.0-py3-none-any.whl", hash = "sha256:65c47207efeaff6b514196d2d420dbb7762f0a07336e1798731f90c81541ab11"},
+]
 termcolor = [
     {file = "termcolor-1.1.0.tar.gz", hash = "sha256:1d6d69ce66211143803fbc56652b41d73b4a400a2891d7bf7a1cdf4c02de613b"},
+]
+threadpoolctl = [
+    {file = "threadpoolctl-3.1.0-py3-none-any.whl", hash = "sha256:8b99adda265feb6773280df41eece7b2e6561b772d21ffd52e372f999024907b"},
+    {file = "threadpoolctl-3.1.0.tar.gz", hash = "sha256:a335baacfaa4400ae1f0d8e3a58d6674d2f8828e3716bb2802c44955ad391380"},
+]
+toml = [
+    {file = "toml-0.10.2-py2.py3-none-any.whl", hash = "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b"},
+    {file = "toml-0.10.2.tar.gz", hash = "sha256:b3bda1d108d5dd99f4a20d24d9c348e91c4db7ab1b749200bded2f839ccbe68f"},
+]
+tqdm = [
+    {file = "tqdm-4.64.0-py2.py3-none-any.whl", hash = "sha256:74a2cdefe14d11442cedf3ba4e21a3b84ff9a2dbdc6cfae2c34addb2a14a5ea6"},
+    {file = "tqdm-4.64.0.tar.gz", hash = "sha256:40be55d30e200777a307a7585aee69e4eabb46b4ec6a4b4a5f2d9f11e7d5408d"},
 ]
 traitlets = [
     {file = "traitlets-5.2.2.post1-py3-none-any.whl", hash = "sha256:1530d04badddc6a73d50b7ee34667d4b96914da352109117b4280cb56523a51b"},
